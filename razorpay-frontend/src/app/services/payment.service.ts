@@ -23,4 +23,9 @@ export class PaymentService {
     verifyPayment(data: any) {
         return this.http.post(`${this.apiUrl}/verify`, data);
     }
+
+    getKeyId() {
+        return this.http.get('http://localhost:8080/api/config/key', { responseType: 'text' });
+    }
+
 }
