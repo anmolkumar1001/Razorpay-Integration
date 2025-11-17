@@ -13,7 +13,7 @@ export class PaymentService {
 
     createOrder(amount: number) {
         const payload= {
-            amount: amount,
+            amountRupees: amount,
             currency: 'INR',
             receipt: 'rcpt_' + new Date().getTime()
         };
